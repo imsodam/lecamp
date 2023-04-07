@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rwdcommon.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/rwdindex.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="shortcut icon" href="./img/icon9.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/blitzer/jquery-ui.min.css"
+      integrity="sha512-ibBo2Ns078qm7xZNTPbIrg5XP4pZ+Aujfmz0QFsce2f4LYpCnF1Esy6FkIRFBgXC9cY30XiS7Ui9+RpN8K7ICg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/prefixfree.min.js"></script>
+    <title>리캠프</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="./js/slick.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="headerbox">
+          <div class="top_menu">
+            <div class="row">
+              <a href="./login.html">로그인</a>
+              <a href="./join.html">회원가입</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="logobox">
+              <h1>
+                <a href="./index.html" class="logo">
+                  <span class="blind">로고</span>
+                </a>
+              </h1>
+            </div>
+          </div>
+          <nav id="nav">
+            <div class="navbox">
+              <ul class="depth1">
+                <li>
+                  <a href="search/index.html">캠핑장 찾기</a>
+                </li>
+                <li>
+                  <a href="recommand/index.html">추천</a>
+                </li>
+                <li>
+                  <a href="safety/index.html">안전수칙</a>
+                </li>
+                <li>
+                  <a href="./index.html">리캠프</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- header -->
+      <a href="#" class="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <!-- hamburger -->
+      <div class="m_menu">
+        <nav class="menu">
+          <ul class="m_depth1">
+            <li>
+              <a href="search/index.html">캠핑장 찾기</a>
+              <p class="bar"></p>
+            </li>
+            <li>
+              <a href="recommand/index.html">추천</a>
+              <p class="bar"></p>
+            </li>
+            <li>
+              <a href="safety/index.html">안전수칙</a>
+              <p class="bar"></p>
+            </li>
+            <li>
+              <a href="./index.html">리캠프</a>
+              <p class="bar"></p>
+            </li>
+            <li class="topMenu">
+              <a href="./login.html">로그인</a>
+            </li>
+            <li class="topMenu">
+              <a href="./join.html">회원가입</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- m_menu -->
+
+      <section id="section">
+        <article class="article1">
+          <div class="slide-group">
+            <div class="slide slide1">
+              <div class="img"></div>
+              <div class="slide-text inner_wrap">
+                <div class="left">
+                  <p class="ment1">여러분,<br />어떤 캠핑을 <br />꿈꾸시나요?</p>
+                  <p class="ment2">LECAMP 가 캠핑의 답이 되어드릴게요</p>
+                  <div class="text-wave"></div>
+                </div>
+                <div class="right">
+                  <video id="vid" muted autoplay loop>
+                    <source src="./img/camping.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide2">
+              <div class="img"></div>
+              <div class="slide-text inner_wrap">
+                <h2>LECAMP Makes Your Camping Life Better</h2>
+                <p>
+                  장소와 시간으로부터 자유로운 여행과,<br />
+                  좋은 장소에서 잘 머무르는 캠핑의 가치를 추구합니다.
+                </p>
+              </div>
+            </div>
+            <div class="slide slide3">
+              <div class="img"></div>
+              <div class="slide-text inner_wrap">
+                <h2>
+                  Camping Mate,<br />
+                  LECAMP
+                </h2>
+                <p>
+                  프라이빗한 캠핑장을 추천합니다. <br />
+                  좋은 장소에서 따스한 봄기운을 느껴보세요!
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- article1 -->
+
+        <article class="cont2">
+          <div class="container">
+            <div class="search">
+              <ul class="searchUl">
+                <li>
+                  체크인
+                  <br />
+                  <span><input type="text" id="datepicker" /></span>
+                </li>
+                <li>
+                  체크아웃
+                  <br />
+                  <span><input type="text" id="datepicker2" /></span>
+                </li>
+                <li class="people">
+                  인원
+                  <button v-on:click="countDown(1)">-</button>
+                  <button v-on:click="countUp(1)">+</button>
+                  <div id="result">{{ count }}명</div>
+                </li>
+              </ul>
+              <button class="search-btn" type="submit">
+                <i class="fa-solid fa-list"></i>
+              </button>
+            </div>
+            <div id="chek" class="checklist">
+              <div id="group1" class="group1 group">
+                <div class="title"><p>지역</p></div>
+                <!-- title -->
+                <div class="list">
+                  <span data-check="서울">서울</span>
+                  <span data-check="부산">부산</span>
+                  <span data-check="대구">대구</span>
+                  <span data-check="인천">인천</span>
+                  <span data-check="광주">광주</span>
+                  <span data-check="대전">대전</span>
+                  <span data-check="울산">울산</span>
+                  <span data-check="세종">세종</span>
+                  <span data-check="경기">경기</span>
+                  <span data-check="강원">강원</span>
+                  <span data-check="충북">충북</span>
+                  <span data-check="충남">충남</span>
+                  <span data-check="전북">전북</span>
+                  <span data-check="전남">전남</span>
+                  <span data-check="경북">경북</span>
+                  <span data-check="경남">경남</span>
+                  <span data-check="제주">제주</span>
+                </div>
+                <!-- list -->
+              </div>
+              <!-- group1 -->
+              <div id="group2" class="group2 group">
+                <div class="title">주변 환경</div>
+                <!-- title -->
+                <div class="list">
+                  <span data-check="산">산</span>
+                  <span data-check="바다">바다</span>
+                  <span data-check="강">강</span>
+                  <span data-check="계곡">계곡</span>
+                  <span data-check="섬">섬</span>
+                </div>
+                <!-- list -->
+              </div>
+              <!-- group2 -->
+              <div id="group3" class="group3 group">
+                <div class="title">캠핑장 형태</div>
+                <!-- title -->
+                <div class="list">
+                  <span data-check="텐트">텐트</span>
+                  <span data-check="캠핑카">캠핑카</span>
+                  <span data-check="트레일러">트레일러</span>
+                  <span data-check="카라반">카라반</span>
+                  <span data-check="차박">차박</span>
+                </div>
+                <!-- list -->
+              </div>
+              <!-- group3 -->
+              <div id="bottom" class="chlbottom"></div>
+              <!-- chlbottom -->
+              <div class="chlbutton">
+                <div id="btn1" class="btn" click="refresh">초기화</div>
+                <div id="btn2" class="btn">검색하기</div>
+              </div>
+              <!-- chlbutton -->
+              <div class="result"></div>
+              <!-- result -->
+            </div>
+            <!-- checklist -->
+          </div>
+        </article>
+        <!-- article2 -->
+
+        <article class="cont3">
+          <div class="container">
+            <div class="cont3_inner1">
+              <div class="cont3_cont1">
+                <strong class="tit">2023</strong>
+                <p>주목해야 할 캠핑장소</p>
+              </div>
+              <div class="cont3_inner">
+                <span class="cont3_imgtxt">
+                  <a href="#">캠핑을 결심하기에 좋은 장소</a>
+                </span>
+                <span class="cont3_imgtxt">
+                  <a href="#">캠핑을 가장 캠핑답게 하는 방법</a>
+                </span>
+                <span class="cont3_imgtxt">
+                  <a href="#">따뜻한 봄을 위한 캠핑</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="cont3_inner2">
+              <div class="cont3_cont2">
+                <div class="cont3_txt">
+                  <p>Everything You need to Know About Camping</p>
+                  <p>Camping is good for you!</p>
+                </div>
+                <ul class="cont3_list">
+                  <li>
+                    <div class="img">
+                      <img src="./img/cont3_img2.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title"><a href="#">국내 캠핑여행</a></strong>
+                        <p class="item_text">호스트가 제공하는 장소 <br /># 차박 # 오토캠핑</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img src="./img/cont3_img3.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title"><a href="#">스테이션 서비스</a></strong>
+                        <p class="item_text">캠핑에 필요한 모든 것 <br /># 청수 # 주차장</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img src="./img/cont3_img4.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title"><a href="#">캠핑장 정보</a></strong>
+                        <p class="item_text">장소의 한계를 넘어 가능한<br />모든 곳</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img src="./img/cont3_img5.jpg" alt="" />
+                    </div>
+                    <div class="htl">
+                      <div class="name_group">
+                        <strong class="item_title"><a href="#">캠핑의 목적</a></strong>
+                        <p class="item_text">따뜻하고 아름다운 <br />캠핑 라이프</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- article3 -->
+
+        <article class="cont4">
+          <div class="container">
+            <div class="tag"><p>국내 캠핑장 투어 📸</p></div>
+            <div class="cont4_list">
+              <div class="list01">
+                <div class="img01">
+                  <!-- <img src="./img/cont4_img1.jpg" alt="" /> -->
+                  <div class="item_text">
+                    <p>
+                      <i class="fa-solid fa-hashtag"> 호수뷰</i>&nbsp;&nbsp;<i class="fa-solid fa-hashtag"> 프라이빗</i>&nbsp;&nbsp;<i class="fa-solid fa-hashtag"> 가족캠핑</i><br />
+                      <i class="fa-solid fa-hashtag"> 대둔산</i>&nbsp;&nbsp;<i class="fa-solid fa-hashtag"> 시냇가물놀이</i>&nbsp;&nbsp; <i class="fa-solid fa-hashtag"> 힐링</i><br />
+                      <i class="fa-solid fa-hashtag"> 모든 장소가 나의 캠핑장이 될 수 있다</i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="list02">
+                <p class="txt">머물고 싶어지게<br />만드는 캠핑장 여행</p>
+                <ul>
+                  <li>
+                    <div class="img02"><img src="./img/cont4_img2.jpg" alt="" /></div>
+                    <p class="item_title">즐겁고 편리한 캠핑라이프</p>
+                    <p class="item_txt"># 매력가득 소도시 <br /># 캠핑여행 최적의 동선</p>
+                  </li>
+                  <li>
+                    <div class="img02"><img src="./img/cont4_img3.jpg" alt="" /></div>
+                    <p class="item_title">지속 가능한 캠핑의 가치를 추구</p>
+                    <p class="item_txt">캠핑의 목적은 사람의 행복</p>
+                  </li>
+                  <li>
+                    <div class="img02"><img src="./img/cont4_img4.jpg" alt="" /></div>
+                    <p class="item_title">캠핑을 즐길 줄 아는 사람들</p>
+                    <p class="item_txt"># 산속 캠핑 <br /># 자연 속 힐링체험</p>
+                  </li>
+                  <li>
+                    <div class="img02"><img src="./img/cont4_img5.jpg" alt="" /></div>
+                    <p class="item_title">새로운 캠핑장 발굴</p>
+                    <p class="item_txt"># 캠핑장 추천 <br /># 최적의 캠핑장</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- article4 -->
+
+        <article class="cont5">
+          <div class="container">
+            <div class="cont5_tit">
+              <p>The Physical Benefits of Camping</p>
+              <p>Camping brings freedom of shelter!</p>
+            </div>
+            <ul class="cont5_list">
+              <li class="cont5_item1">
+                <div class="cont5_txt1">
+                  <p>캠핑의 모든것</p>
+                  <div class="txt_box">
+                    <div class="tbox1">지속가능한 캠핑의 가치를 추구</div>
+                    <br />
+                    <div class="tbox2">캠핑의 목적은 사람의 행복</div>
+                  </div>
+                </div>
+              </li>
+              <li class="cont5_item2">
+                <div class="cont5_txt2">
+                  <p>캠핑의 가치</p>
+                  <div class="txt_box">
+                    <div class="tbox1">캠핑은 아름다운 여정</div>
+                    <br />
+                    <div class="tbox2">캠핑을 위한 주변 환경 만들기</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- article5 -->
+      </section>
+      <!-- section -->
+
+      <footer id="footer">
+        <div class="footer_wrap">
+          <div class="footer_logo">
+            <img src="./img/LECAMP_flogo.png" alt="" />
+          </div>
+          <div class="fnb">
+            <ul>
+              <li><a href="#">이용약관</a><span>|</span></li>
+              <li><a href="#">개인정보처리방침</a><span>|</span></li>
+              <li><a href="#">이메일주소 무단수집거부</a></li>
+            </ul>
+          </div>
+          <div class="footerBottom">
+            <address>서울특별시 강남구 강남구 테헤란로5길 24</address>
+            <p class="copyright">Copyright ⓒ 2020 LECAMP. LTD. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+      <script src="./js/common.js"></script>
+      <script src="./js/index.js"></script>
+    </div>
+  </body>
+</html>
