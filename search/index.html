@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캠핑장 찾기</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/rwdindex.css">
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/rwdcommon.css" />
+    <link rel="shortcut icon" href="./img/icon9.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6938adc00cb38070fc3f50381896235c&libraries=services"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+     <div id="wrap">
+      <div class="back"></div>
+        <a href="#" class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <!-- hamburger -->
+          <div class="m_menu">
+            <nav class="menu">
+              <ul class="m_depth1">
+                <li>
+                  <a href="./index.html">캠핑장 찾기</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="../recommand/index.html">추천</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="../safety/index.html">안전수칙</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="../index.html">리캠프</a>
+                  <p class="bar"></p>
+                </li>
+                <li class="topMenu">
+                  <a href="../login.html">LOGIN</a>
+                </li>
+                <li class="topMenu">
+                  <a href="../join.html">SIGNUP</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- m_menu -->
+      <div id="sectionbox">
+          <section id="section">
+        <div class="box">
+            <div class="form">
+            <select name="" id="acc_sido" class="select"></select>
+            <select name="" id="acc_gugun" class="select"></select>
+            <button id="searchBtn" data-text="검색">검색</button>
+        </div>
+            </div>
+         <div id="map">
+         </div>
+         <script src="./js/kakaomap.js"></script>
+        </section>
+      </div>
+    </div><!-- wrap -->
+    <script type="module">
+        import sido from './js/sido.js'
+        let sidoList = ""
+        for (let i in sido) {
+            sidoList += `<option>${sido[i].type}</option>`
+        }
+        $('#acc_sido').append(sidoList)
+        gugun('서울특별시')
+        $('#acc_sido').on('change', function(){
+            let tsido = $('#acc_sido option:selected').text()
+            gugun(tsido)
+        })
+        function gugun(tsido){
+            let newsido = sido.filter(function(value){
+                return value.type===tsido
+            })
+            let newgugun = newsido[0].gugun
+            let gugunList = ""
+            newgugun.map(function(value){
+                gugunList += `<option value="${value.code}">${value.name}</option>`
+            })
+            $('#acc_gugun').html(gugunList)
+        }
+     </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

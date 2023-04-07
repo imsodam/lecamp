@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+@media screen and (max-width:1430px) {
+    #section {
+        margin-top: 150px;
+    }
+    #sectionbox {
+        background: url(../img/back2.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        transition: all 0.4s;
+    }
+    .box {
+        width: 430px;
+    }
+    #map {
+        width: 430px;
+        height: 45vh;
+    }
+    .result {
+        height: 40.8vh;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    #wrap {
+        background-size: cover;
+    }
+    #section {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+    #sectionbox {
+        background: url(../img/back3.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        transition: all 0.4s;
+    }
+    .box {
+        padding-top: 150px;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    #map {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    select {
+        margin-right: 2px;
+    }
+    .form {
+        display: flex;
+        padding: 0px;
+    }
+    .form #searchBtn {
+        width: 100px;
+    }
+    .result {
+        height:140px;
+        width: 100%;
+    }
+    .result h2 {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+        transition: all 0.3s;
+    }
+    .result p {
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 5px;
+        transition: all 0.3s;
+    }
+    .result p:last-child {
+        padding-bottom: 15px;
+    }
+    .mapbox {
+        width:250px;
+        text-align:center;
+        padding:5px 5px;
+        border-radius: 10px;
+    }
+    .mapbox p {
+        font-size: 12px;
+        color: gray;
+    }
+    .mapbox h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: cornflowerblue;
+        padding-top: 5px;
+    }
+    .mapbox .adr {
+        padding-top: 15px;
+    }
+    .mapbox .pnum {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .circles {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:850px) {
+    #section {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #section {
+        width: 62%;
+        transition: all 0.4s;
+    }
+
+    #sectionbox {
+        background: url(../img/back4.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        transition: all 0.4s;
+    }
+    #wrap {
+        display: block;
+    }
+    #map {
+        width: 100%;
+    }
+    .box {
+        padding-top: 170px;
+    }
+    .result {
+        height:144px
+    }
+    .result h2 {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+        transition: all 0.3s;
+    }
+    .result p {
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 5px;
+        transition: all 0.3s;
+    }
+    .result p:last-child {
+        padding-bottom: 15px;
+    }
+    .mapbox {
+        width:200px;
+        text-align:center;
+        padding:5px 5px;
+        border-radius: 10px;
+    }
+    .mapbox p {
+        font-size: 12px;
+        color: gray;
+    }
+    .mapbox h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: cornflowerblue;
+        padding-top: 5px;
+    }
+    .mapbox .adr {
+        padding-top: 15px;
+    }
+    .mapbox .pnum {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #section {
+        width: 60%;
+        transition: all 0.4s;
+        margin-top: 70px;
+    }
+    #sectionbox {
+        background: url(../img/back5.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        transition: all 0.4s;
+    }
+    #map {
+        height: 270px;
+    }
+}
+@media screen and (max-width:500px) {
+    #section {
+        width: 76%;
+    }
+}
