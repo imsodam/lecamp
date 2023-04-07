@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px) {
+  /* header */
+  #header {
+    height: 60px;
+  }
+
+  #header .logobox .logo {
+    background: url(../img/LECAMP_logo1.png);
+    display: block;
+    width: 110px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 0 0 10px;
+  }
+
+  #header .top_menu {
+    text-align: right;
+    font-size: 12px;
+    display: none;
+  }
+
+  #header #nav .depth1 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 700px;
+    transition: all 0.8s;
+    display: none;
+  }
+
+  #header #nav .depth1 > li {
+    display: block;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 45px 0;
+    transition: all 0.3s;
+  }
+
+  /* 사이드 메뉴 열기 버튼 */
+  .hamburger-button {
+    right: 10px;
+    width: 25px;
+    height: 20px;
+    top: 16px;
+  }
+  .hamburger-button span {
+    height: 6px;
+  }
+  .hamburger-button span:nth-child(1) {
+    top: 0;
+  }
+
+  .hamburger-button span:nth-child(2),
+  .hamburger-button span:nth-child(3) {
+    top: 10px;
+  }
+
+  .hamburger-button span:nth-child(4) {
+    top: 20px;
+  }
+
+  /* 슬라이드 메뉴 */
+  .m_menu nav ul li {
+    margin: 40px 0;
+    opacity: 0;
+    position: relative;
+  }
+
+  .m_menu nav ul li .bar {
+    height: 8px;
+  }
+
+  /* footer */
+  #footer .footer_wrap {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .footerBottom {
+    padding: 42px 0 0;
+    margin-left: 225px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* header */
+  #header #nav .depth1 > li {
+    display: block;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 45px 0;
+    transition: all 0.3s;
+  }
+
+  /* 슬라이드 메뉴 */
+  .m_menu nav ul li a {
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+    font-size: 45px;
+  }
+
+  .m_menu nav ul li.topMenu a {
+    font-size: 30px;
+  }
+
+  /* footer */
+  #footer .footer_logo {
+    margin-right: 40px;
+  }
+
+  .footerBottom {
+    padding: 23px 0 0;
+    margin-left: 160px;
+  }
+}
+
+@media screen and (max-width: 514px) {
+  /* footer */
+  #footer .fnb li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .footerBottom {
+    padding: 23px 0 0;
+    margin-left: 129px;
+  }
+} 
