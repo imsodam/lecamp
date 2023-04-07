@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px) {
+    .article1 .slick-arrow{
+        position: absolute; top: 50%; transform: translateY(-50%);
+        font-size: 40px; color: #464646; border: none;
+        background: none;
+    }
+    .article1 .slick-prev { left: 10px; z-index: 9;}
+    .article1 .slick-next { right: 10px;}
+ .page2 .detailwrap {
+    display: block;
+ }
+ .page2 .detailwrap .leftWrap {
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+ }
+ .page2 .detailwrap .rightWrap {
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: -250px;
+ }
+ .rightWrap .detailRight .box {
+    height: 500px;
+    margin-right: 5px;
+}
+.rightWrap .detailRight .box:last-child {
+    margin-right: 0px;
+}
+ .page2 .detailwrap .detailLeft> div {
+    width: 48%;
+    height: 300px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.page2 .detailwrap .detailLeft> div:nth-child(1) {
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.page2 .detailwrap .detailLeft> div:nth-child(2) {
+    margin-bottom: 2%;
+}
+.page2 .detailwrap .detailLeft> div:nth-child(3) {
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.page2 .detailwrap .detailLeft> div:nth-child(4) {
+    margin-bottom: 2%;
+}
+.page2 .detailwrap .detailLeft> div:nth-child(5) {
+    margin-right: 2%;
+}
+.rightWrap .btn {
+    bottom: -48px;
+}
+#sec2 .slide .slideright p {
+    font-size: 15px;
+}
+#sec2 .slide .slide-text h3{
+    color: #464646;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    transform: translateY(-100%); opacity: 0;
+    transition: all 0.5s 0.6s;
+}
+
+#sec2 .slide.slick-current.slick-active .slide-text h3{
+    transform: translateY(0%); opacity: 1;
+}
+
+
+#sec2 .slide .slide-text h2 {
+    font-size: 33px;
+    font-weight: 600;
+    color: #464646;
+    margin-bottom: 35px;
+    transform: translateY(-100%); opacity: 0;
+    transition: all 0.5s 0.6s;
+}
+
+#sec2 .slide.slick-current.slick-active .slide-text h2{
+    transform: translateY(0%); opacity: 1;
+}
+
+
+#sec2 .slide  .slide-text p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+    line-height: 1;
+    transform: translateY(100%); opacity: 0;
+    transition: all 0.5s 0.6s;
+}
+
+#sec2 .slide.slick-current.slick-active .slide-text p{
+    transform: translateY(0%); opacity: 1;
+}
+
+
+#sec2 .slide  .slide-text a{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #464646;
+    letter-spacing: .1em;
+    margin-top: 35px;
+    padding: 16px 36px;
+    border-radius: 30px;
+    background-color: #fa5c5c;
+    /* transition: all 0.5s; */
+    transform: translateY(100%); opacity: 0;
+    transition: all 0.5s 0.6s;
+}
+
+#sec2 .slide.slick-current.slick-active .slide-text a{
+    transform: translateY(0%); opacity: 1;
+}
+
+#sec2 .slide .slide-text a:hover{
+    background: #464646;
+    color: #fa5c5c;
+}
+ /*  page3 부분  */
+ .page3{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.page3 .banner {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.page3 .banner .info h1{
+    margin: 0 50px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-size: 30px;
+    line-height: 2;
+    letter-spacing: 1px;
+    padding-bottom: 100px;
+}
+
+.page3 .banner img{
+    transition: all 0.5s;
+    opacity: 0.8;
+    height: 12vh; 
+}
+
+.page3 .wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+}
+.introAni #container span {
+    font-size: 35px;
+}
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .rightWrap .detailRight .box img {
+        width: 15px;
+    }
+    #sec2 .slide .slide-text h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #464646;
+        margin-bottom: 35px;
+        transform: translateY(-100%); opacity: 0;
+        transition: all 0.5s 0.6s;
+    }
+    .article1 .slick-arrow{
+        position: absolute; top: 50%; transform: translateY(-50%);
+        font-size: 30px; color: #464646; border: none;
+        background: none;
+    }
+    .article1 .slick-prev { left: 10px; z-index: 9;}
+    .article1 .slick-next { right: 10px;}
+    .introAni #container span {
+        font-size: 38px;
+    }
+}

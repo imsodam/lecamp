@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>추천</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/rwdindex.css">
+	<link rel="stylesheet" href="./css/animate-ex.css">
+	<link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/rwdcommon.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="shortcut icon" href="./img/icon9.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+	<script src="js/index.js"></script>
+	
+</head>
+<body>
+	<div id="wrap">			
+        <header id="header">
+            <div class="headerbox">
+              <div class="top_menu">
+                <div class="row">
+                  <a href="./login.html">로그인</a>
+                  <a href="./join.html">회원가입</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="logobox">
+                  <h1>
+                    <a href="./index.html" class="logo">
+                      <span class="blind">로고</span>
+                    </a>
+                  </h1>
+                </div>
+              </div>
+              <nav id="nav">
+                <div class="navbox">
+                  <ul class="depth1">
+                    <li>
+                      <a href="../search/index.html">캠핑장 찾기</a>
+                    </li>
+                    <li>
+                      <a href="./index.html">추천</a>
+                    </li>
+                    <li>
+                      <a href="../safety/index.html">안전수칙</a>
+                    </li>
+                    <li>
+                      <a href="../index.html">리캠프</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <!-- header -->
+          <a href="#" class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <!-- hamburger -->
+          <div class="m_menu">
+            <nav class="menu">
+              <ul class="m_depth1">
+                <li>
+                  <a href="../search/index.html">캠핑장 찾기</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="index.html">추천</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="../safety/index.html">안전수칙</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="../index.html">리캠프</a>
+                  <p class="bar"></p>
+                </li>
+                <li class="topMenu">
+                  <a href="./login.html">로그인</a>
+                </li>
+                <li class="topMenu">
+                  <a href="./join.html">회원가입</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- m_menu -->
+    
+ 
+ 
+ 
+ 
+<section id="sec2" class="page2">
+    <article class="article1 article">
+        <!-- 메인 슬라이드 화면 -->
+      <div class="slide-group">
+            <div class="slide slide1">
+                <div class="slide-text">
+                    <h2>소란캠프</h2>
+                    <p>
+                        경기도 가평군 청평면 대성리578-3
+                    </p>
+                    <a href="" target="_blank" class="btn-more">45,000원 / 박</a>
+                </div>
+                <div class="slideright">
+                  <p>소란캠프 이용객들의 사진과 <br>후기가 궁금하다면 ? 눌러보세요 !</p>
+                </div>
+            </div>
+
+            <div class="slide slide2">
+                <div class="slide-text">
+                    <h2>반딧불자연캠핑장</h2>
+                    <p>
+                        충청북도 단양군 단성면 두항리 1길 50
+                    </p>
+                    <a href="" target="_blank" class="btn-more">40,000원 / 박</a>
+                </div>
+                <div class="slideright">
+                  <p>반딧불자연캠핑장 이용객들의 사진과 <br>후기가 궁금하다면 ? 눌러보세요 !</p>
+                </div>
+            </div>
+
+            <div class="slide slide3">
+                <div class="slide-text">
+                    <h2>김삿갓 체험 캠핑장</h2>
+                    <p>
+                        강원도 영월군 김삿갓면 와석리 327-2
+                    </p>
+                    <a href="" target="_blank" class="btn-more">40,000원 / 박</a>
+                </div>
+                <div class="slideright">
+                  <p>김삿갓 체험 캠핑장 이용객들의 사진과 <br>후기가 궁금하다면 ? 눌러보세요 !</p>
+                </div>
+            </div> 
+            <div class="slide slide4">
+                <div class="slide-text">
+                    <h2>파피루스캠핑장</h2>
+                    <p>
+                        경기도 포천시 영중면 성동리 74번지
+                    </p>
+                    <a href="" target="_blank" class="btn-more">40,000원 / 박</a>
+                </div>
+                <div class="slideright">
+                  <p>파피루스캠핑장 이용객들의 사진과 <br>후기가 궁금하다면 ? 눌러보세요 !</p>
+                </div>
+            </div> 
+            <div class="slide slide5">
+                <div class="slide-text">
+                    <h2>청운오토캠핑장</h2>
+                    <p>
+                        경기도 양평군 청운면 수풀길 37
+                    </p>
+                    <a href="" target="_blank" class="btn-more">40,000원 / 박</a>
+                </div>
+                <div class="slideright">
+                  <p>청운오토캠핑장 이용객들의 사진과 <br>후기가 궁금하다면 ? 눌러보세요 !</p>
+                </div>
+            </div> 
+        </div>  
+    </article>
+    <div class="detailwrap wrap1">
+      <div class="leftWrap">
+        <h2>방문객들이 찍은 시설 사진</h2>
+      <div class="detailLeft">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div><!--detailLeft/-->
+    </div><!--leftWrap/-->
+    
+    <div class="rightWrap">
+      <h2>방문객들의 후기</h2>
+      <div class="detailRight">
+        <div class="right1 box">
+          <ul>
+            <li><strong>별점 4.8점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>그늘이 많고 뷰가 좋아요 ! </p></li>
+            <li>화장실, 개수대 양호한데 정책이 조금 퍽퍽하고 친절하진 않아요.<br>
+              장소는 넓고, 조용한 존과 키즈존이 있는거 같아서 문의하고 예약하면 좋을거 같아요 ~
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right1/-->
+        <div class="right2 box">
+          <ul>
+            <li><strong>별점 5.0점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>관리가 잘 되어 있어요 </p></li>
+            <li>개인 냉장고가 있어서 너무 좋았고, 시설 관리가 잘 되어 있었어요 <br>
+              장비대여도 가능하고 역이랑도 가까워서 하루 즐기기에 좋은것 같아요!
+            </li>
+            <li><h3>김&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right2/-->
+        <div class="right3 box">
+          <ul>
+            <li><strong>별점 4.5점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>조용히 쉬기 좋아요 </p></li>
+            <li>시설이 잘 갖춰져 있고 수영장도 넓어서 애들과 같이 가기 좋았어요<br>
+              특이하게 샤워장을 예약하고 사용해야되고 다음날 예약이 없으면 오후 6시까지 있어도 돼요
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right3/-->
+      </div><!--detailRight/-->
+      <a class="btn" href="#">직접 후기 쓰러 가기</a>
+    </div><!--rightWrap/-->
+
+      <i class="fas fa-window-close"></i>
+    </div><!--detailwrap/-->
+    
+
+    <div class="detailwrap wrap2">
+      <div class="leftWrap">
+        <h2>방문객들이 찍은 시설 사진</h2>
+      <div class="detailLeft">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div><!--detailLeft/-->
+    </div><!--leftWrap/-->
+    
+    <div class="rightWrap">
+      <h2>방문객들의 후기</h2>
+      <div class="detailRight">
+        <div class="right1 box">
+          <ul>
+            <li><strong>별점 4.8점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>물놀이 하기 좋아요</p></li>
+            <li>수영장이 넓어서 물놀이 하기 좋고 사이트들이 적당히 떨어져 있어서 여유로워서 좋았어요<br>
+              화장실이나 샤워실 시설은 오래됐지만 관리가 잘 돼서 깨끗했어요
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right1/-->
+        <div class="right2 box">
+          <ul>
+            <li><strong>별점 5.0점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>가족끼리 가기 좋아요</p></li>
+            <li>수영장이 너무너무 커서 가족단위로 많이들 오시는거 같더라구요 <br>
+              충주호 인근에 위치해 있어서 단양 여행의 베이스캠프로 삼기에도 좋은 코스예요
+            </li>
+            <li><h3>김&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right2/-->
+        <div class="right3 box">
+          <ul>
+            <li><strong>별점 4.5점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>여름에도 시원해요 </p></li>
+            <li>수영장이 크고 수영장 물이 마을에서 식수로 사용하는 지하수라서 약품처리 전혀 없이
+              아이들이 놀수 있어서 좋았습니다.<br>
+              여름 캠핑장으로 강력 추천합니다!
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right3/-->
+      </div><!--detailRight/-->
+      <a class="btn" href="#">직접 후기 쓰러 가기</a>
+    </div><!--rightWrap/-->
+
+      <i class="fas fa-window-close"></i>
+    </div><!--detailwrap/-->
+
+    <div class="detailwrap wrap3">
+      <div class="leftWrap">
+        <h2>방문객들이 찍은 시설 사진</h2>
+      <div class="detailLeft">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div><!--detailLeft/-->
+    </div><!--leftWrap/-->
+    
+    <div class="rightWrap">
+      <h2>방문객들의 후기</h2>
+      <div class="detailRight">
+        <div class="right1 box">
+          <ul>
+            <li><strong>별점 4.8점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>편의시설이 근처에 있어요</p></li>
+            <li>개수대 온수 매우 잘 나오고,공용 냉장고/전자렌지 사용 가능해요 대만족♥<br>
+                아무래도 계곡 캠핑장이다보니 탈수기도 준비되어 있네요!
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right1/-->
+        <div class="right2 box">
+          <ul>
+            <li><strong>별점 5.0점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>가족끼리 가기 좋아요</p></li>
+            <li>주차공간이 따로 있다보니 아이들이 어디에 있는지 한눈에 볼 수 있으며<br>
+              뛰어놀기도 좋고, 공놀이 하기도 좋아요!
+            </li>
+            <li><h3>김&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right2/-->
+        <div class="right3 box">
+          <ul>
+            <li><strong>별점 4.5점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>시설이 깔끔해요</p></li>
+            <li>음식을 시켜먹는 식당과 슈퍼가 있어서 너무 편하고 좋았어요 ~<br>
+              화장실도 휴게소 화장실이라 깔끔하고 샤워실과 수돗가도 깔끔했어요 !
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right3/-->
+      </div><!--detailRight/-->
+      <a class="btn" href="#">직접 후기 쓰러 가기</a>
+    </div><!--rightWrap/-->
+
+      <i class="fas fa-window-close"></i>
+    </div><!--detailwrap/-->
+
+    <div class="detailwrap wrap4">
+      <div class="leftWrap">
+        <h2>방문객들이 찍은 시설 사진</h2>
+      <div class="detailLeft">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div><!--detailLeft/-->
+    </div><!--leftWrap/-->
+    
+    <div class="rightWrap">
+      <h2>방문객들의 후기</h2>
+      <div class="detailRight">
+        <div class="right1 box">
+          <ul>
+            <li><strong>별점 3.8점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>애견동반가능해요</p></li>
+            <li>포천이라는 나름 멀지 않은 곳에 있고 강아지와 함께 갈 수 있다는것이 제일 좋은것
+              같아요 ㅎㅎ<br>
+              캠핑장 자체가 깔끔하고 깨끗해서 우리 뚜또가 산책하기 좋았답니다
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right1/-->
+        <div class="right2 box">
+          <ul>
+            <li><strong>별점 5.0점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>편의시설이 가까워요 </p></li>
+            <li>파피루스 캠핑장은 사이트가 엄청 많은 편은 아니라 어느 곳이든 매점이나 개수대 화장실을
+              편하게 이용할 수 있을 정도였어요 ㅎㅎ<br>
+              사장님도 친절하고 캠핑장이 대체적으로 깔끔했답니다!
+            </li>
+            <li><h3>김&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right2/-->
+        <div class="right3 box">
+          <ul>
+            <li><strong>별점 4.5점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>배드민턴 무료 이용가능</p></li>
+            <li>배드민턴도 무료로 이용할 수 있어요 간단한 캠핑용품도 대여가능하더라구요 <br>
+              전자레인지가 매점 안에 있는데 매점이 8시에 문을 닫아요 ,, 
+              데크가 낡고 오래돼서 간격이 일정하지 않아요
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right3/-->
+      </div><!--detailRight/-->
+      <a class="btn" href="#">직접 후기 쓰러 가기</a>
+    </div><!--rightWrap/-->
+
+      <i class="fas fa-window-close"></i>
+    </div><!--detailwrap/-->
+
+    <div class="detailwrap wrap5">
+      <div class="leftWrap">
+        <h2>방문객들이 찍은 시설 사진</h2>
+      <div class="detailLeft">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div><!--detailLeft/-->
+    </div><!--leftWrap/-->
+    
+    <div class="rightWrap">
+      <h2>방문객들의 후기</h2>
+      <div class="detailRight">
+        <div class="right1 box">
+          <ul>
+            <li><strong>별점 3.9점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>나무들이 잘 심어져 있어요</p></li>
+            <li>수영장이나 아이들이 놀만한 공간이 잘 마련되어있어서,
+              다른 캠퍼들이 아이들 소리로 불편해하지도 않고,아이들이 좋아함!<br>
+              단점을 꼽자면 가끔 축사 냄새가 바람에 날려 왔었어요 ( 그렇게 심하진않아요)
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right1/-->
+        <div class="right2 box">
+          <ul>
+            <li><strong>별점 5.0점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>편하게 예약이 가능해요 </p></li>
+            <li>문자 보내거나 전화해야되는데도 있는데
+              <br>
+              청운오토캠핑장은 편하게 예약 가능! 
+              개울도 흐르고 공기 좋고 예약 편하고 서울에서 많이 멀지도 않고 괜찮은 캠핑장이다 
+            </li>
+            <li><h3>김&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right2/-->
+        <div class="right3 box">
+          <ul>
+            <li><strong>별점 4.5점</strong></li>
+            <li>
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+              <img src="img/star.png" alt="">
+            </li>
+            <li><p>가깝게 다녀오기 좋아요</p></li>
+            <li>벌레가 너무 많다는 안좋은 평이 많았었는데 날씨가 서늘해지고 방문해서 그런지 알아주는 벌레극혐러임에도 <br>
+              벌레때문에 엄청 거슬리는 상황은 없었어여!!!!
+              화장실이랑 샤워장도 나름 깨끗하게 관리되구 있었쥬우우우???   나름 만족쓰!
+            </li>
+            <li><h3>이&#42;&#42; 방문객님</h3></li>
+          </ul>
+        </div><!--right3/-->
+      </div><!--detailRight/-->
+      <a class="btn" href="#">직접 후기 쓰러 가기</a>
+    </div><!--rightWrap/-->
+
+      <i class="fas fa-window-close"></i>
+    </div><!--detailwrap/-->
+ </section><!--sec2/-->
+
+  <section id="sec3" class="page3">
+    <div class="wrap">
+      <div class="banner">
+        <div class="info">
+          <h1>캠핑의 맛과 즐거움을 선사해드립니다.<br>아래의 추천 아이템을 챙겨가세요!</h1>
+        </div>
+
+        <div class="ban-1 ban">
+          <a href="https://smartstore.naver.com/harin2ne" target="_blank"><img src="./img/banner1.jpg" alt=""></a>
+          <a href="https://smartstore.naver.com/trouveur/products/8308284642" target="_blank"><img src="./img/banner2.jpg" alt=""></a>
+        </div>
+        <div class="ban-2 ban">
+          <a href="https://smartstore.naver.com/miplusshop" target="_blank"><img src="./img/banner3.jpg" alt=""></a>
+          <a href="https://smartstore.naver.com/momodak" target="_blank"><img src="./img/banner4.jpg" alt=""></a>
+        </div>
+        <div class="ban-3 ban">
+         <a href="https://smartstore.naver.com/unclenpapa" target="_blank"><img src="./img/banner5.jpg" alt=""></a>
+          <a href="https://www.easycamping.co.kr/" target="_blank"><img src="./img/banner6.png" alt=""></a>
+        </div>
+        <div class="ban-4 ban">
+          <a href="#" target="_blank"><img src="./img/banner9.jpg" alt=""></a>
+          <a href="https://smartstore.naver.com/_foodsignal" target="_blank"><img src="./img/banner8.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section><!--sec3/-->
+
+
+
+</div><!--wrap/-->
+<div class="introAni">
+  <div class="wrap">
+    <div id="container">
+      <span id="text1"></span>
+      <span id="text2"></span>
+  </div>
+  <svg id="filters">
+      <defs>
+          <filter id="threshold">
+              <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 255 -140" />
+          </filter>
+      </defs>
+  </svg>
+    <!-- <div class="intro">
+      <h1 class="swift-up-text">추억을 담고 싶은 곳이 안 떠오르시나요?<br>저희가 추천해드릴게요!</h1>
+    </div> -->
+  </div>
+</div>
+ 
+	
+</body>
+</html>
