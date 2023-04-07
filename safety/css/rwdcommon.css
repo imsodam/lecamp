@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px) {
+  #header {
+    height: 60px;
+  }
+  #header .top_menu {
+    text-align: right;
+    color: #999;
+    font-size: 12px;
+    display: none;
+  }
+
+  #header #nav .depth1 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 700px;
+    transition: all 0.8s;
+    display: flex;
+  }
+
+  #header #nav .depth1 > li {
+    display: block;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    margin: 45px 0;
+    transition: all 0.3s;
+  }
+
+  .hamburger-button {
+    right: 10px;
+    width: 25px;
+    height: 20px;
+    top: 16px;
+  }
+  .hamburger-button span {
+    height: 6px;
+  }
+  .hamburger-button span:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger-button span:nth-child(2),
+  .hamburger-button span:nth-child(3) {
+    top: 10px;
+  }
+  
+  .hamburger-button span:nth-child(4) {
+    top: 20px;
+  }
+  .m_menu nav ul li {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header #nav .depth1 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 550px;
+    transition: all 0.8s;
+    display: none;
+  }
+
+  #header #nav .depth1 > li {
+    display: block;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    margin: 45px 0;
+    transition: all 0.3s;
+  }
+
+  .m_menu nav ul li a {
+    color: #fff;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+    font-size: 45px;
+  }
+
+  .m_menu nav ul li.topMenu a {
+    color: #ddd;
+    font-size: 30px;
+  }
+
+  #footer {
+    width: 100%;
+    position: relative;
+    background: #111;
+    padding: 20px 0 50px 0;
+    color: #ddd;
+  }
+
+  #footer .footer_logo img {
+    width: 110px;
+    height: 65px;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+  }
+  
+  #footer .fnb {
+    width: 100%;
+    padding: 15px 0 0 0;
+    overflow: hidden;
+    margin-left: 80px;
+    position: absolute;
+    left: 0px;
+  }
+
+ .footerBottom {
+    position: relative;
+    padding: 42px 0 0;
+    margin: 30px 0 0 98px;
+    color: #ddd;
+  }
+}
