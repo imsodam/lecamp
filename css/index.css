@@ -25,6 +25,7 @@ article {
   height: 50vw;
   background-size: cover;
   background-position: center;
+  filter: brightness(70%);
 }
 #section .slide1 .img {
   background-image: url(../img/slide1.jpg);
