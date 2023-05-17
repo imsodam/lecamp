@@ -1,30 +1,29 @@
-(function ($) {
-  $('.slide-group')
-    .on("init", function () {
-      $('.slick-slide[data-slick-index="0"]').addClass("slick-animation");
-    })
-    .slick({
-      autoplay: true,
-      autoplaySpeed: 4000,
-      speed: 600,
-      dots: true,
-      arrows: false,
-      prevArrow: false,
-      nextArrow: false,
-      fade: true,
-      //breakpoint
-    })
+// article1
+$(window).load(function () {
+  var $slick_carousel = $(".slide-group");
 
-  $('.slide-group')
-    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-      $('.slide').eq(nextSlide).addClass("slick-animation");
-    })
-    .on('afterChange', function (event, slick, currentSlide, nextSlide) {
-      $('.slide').eq(nextSlide).addClass("slick-animation");
-    })
+  $slick_carousel.on('init', function (event, slick) {
 
-
-})(jQuery);
+    $(".slide .img").eq(0).addClass("slick-animation");
+  });
+  $slick_carousel.on('afterChange', function (event, slick, currentSlide) {
+    $(".slide .img").removeClass("slick-animation");
+    $(this).find(".slide .img").eq(currentSlide).addClass("slick-animation")
+  });
+  // 메인 비주얼 롤링
+  $slick_carousel.slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    pauseOnHover: false,
+    autoplay: true,
+    fade: true,
+    autoplaySpeed: 5000,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+});
 
 // article2
 $(window).scroll(function () {
