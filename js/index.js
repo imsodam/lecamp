@@ -1,14 +1,27 @@
 (function ($) {
-  $('.slide-group').slick({
-    autoplay: true,
-    autoplaySpeed: 4000,
-    speed: 600,
-    dots: true,
-    arrows: true,
-    prevArrow: false,
-    nextArrow: false,
-    //breakpoint
-  })
+  $('.slide-group')
+    .on("init", function () {
+      $('.slick-slide[data-slick-index="0"]').addClass("slick-animation");
+    })
+    .slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 600,
+      dots: true,
+      arrows: false,
+      prevArrow: false,
+      nextArrow: false,
+      fade: true,
+      //breakpoint
+    })
+
+  $('.slide-group')
+    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      $('.slide').eq(nextSlide).addClass("slick-animation");
+    })
+    .on('afterChange', function (event, slick, currentSlide, nextSlide) {
+      $('.slide').eq(nextSlide).addClass("slick-animation");
+    })
 
 
 })(jQuery);
