@@ -97,10 +97,6 @@ article {
   overflow: hidden;
 }
 
-.article1 .slick-dots li.slick-active button {
-  animation: btnani 3s both;
-}
-
 @keyframes btnani {
   0% {
     width: 0px;
@@ -108,6 +104,40 @@ article {
   100% {
     width: 100%;
   }
+}
+
+.article1 .slick-dots li.slick-active button {
+  animation: btnani 3s both;
+}
+
+/* play & pause */
+.article1 .btn {
+  position: relative;
+}
+.article1 .btn .btn_pause {
+  background: url("../img/pause.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: -310px;
+  right: 9%;
+}
+
+.article1 .btn .btn_pause.on {
+  background: url("../img/play.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: -310px;
+  right: 9%;
 }
 
 /* 컨텐츠구역 2 */
