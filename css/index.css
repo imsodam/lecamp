@@ -79,7 +79,7 @@ article {
   bottom: 300px;
   width: 20%;
   height: 3px;
-  right: 11%;
+  right: 15%;
   background: rgba(255, 255, 255, 0.5);
 }
 
@@ -122,7 +122,7 @@ article {
   outline: none;
   position: absolute;
   top: -310px;
-  right: 9%;
+  right: 12%;
 }
 
 .article1 .btn .btn_pause.on {
@@ -135,7 +135,7 @@ article {
   outline: none;
   position: absolute;
   top: -310px;
-  right: 9%;
+  right: 12%;
 }
 
 /* 컨텐츠구역 2 */
