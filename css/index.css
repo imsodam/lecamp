@@ -18,8 +18,6 @@ article {
 }
 #section .slide {
   position: relative;
-  /* transform: translate3d(0px, 0px, 0px); */
-  /* transition: all 4000ms ease 0s; */
 }
 #section .slide .img {
   height: 50vw;
@@ -843,6 +841,18 @@ article {
 
 .article4_accor div:nth-child(4) {
   background-image: url("../img/accor_4.jpg");
+}
+
+.article4_accor div::before {
+  content: "";
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000;
+  border-radius: 10px;
 }
 
 /* 컨텐츠구역 5 */
