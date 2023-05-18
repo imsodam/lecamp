@@ -25,6 +25,20 @@ $(window).load(function () {
   });
 });
 
+//pause&play
+var sw = 0;
+$('.btn_pause').click(function () {
+  if (sw == 0) {
+    $('.btn_pause').addClass('on');
+    $('.slide-group').slick('slickPause');
+    sw = 1;
+  } else {
+    $('.btn_pause').removeClass('on');
+    $('.slide-group').slick('slickPlay');
+    sw = 0;
+  }
+});
+
 // article2
 $(window).scroll(function () {
   $('article').each(function (i) {
