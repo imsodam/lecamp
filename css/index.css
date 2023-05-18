@@ -76,19 +76,17 @@ article {
 
 .article1 .slick-dots {
   position: absolute;
-  bottom: 200px;
-  width: 80%;
-  height: 5px;
-  left: 10%;
-  /* display: inline-block; */
-  /* text-align: center; */
+  bottom: 300px;
+  width: 20%;
+  height: 3px;
+  right: 11%;
   background: rgba(255, 255, 255, 0.5);
 }
 
 .article1 .slick-dots li button {
   border: none;
   width: 0px;
-  height: 5px;
+  height: 3px;
   background: #fff;
   position: absolute;
   top: 0;
